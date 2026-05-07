@@ -95,7 +95,7 @@ export default function ReviewsSection() {
             >
               <Quote className="w-6 h-6 text-brand-blue/30 flex-shrink-0" />
 
-              <p className="text-sm text-gray-700 leading-relaxed flex-1">"{review.text}"</p>
+              <p className="text-sm text-gray-700 leading-relaxed flex-1">&ldquo;{review.text}&rdquo;</p>
 
               <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                 <div className="flex items-center gap-3">

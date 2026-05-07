@@ -20,7 +20,7 @@ export default function ServiceAreaSection() {
               Serving San Diego County
             </h2>
             <p className="text-gray-500 mt-3 text-sm leading-relaxed">
-              We're local and ready to help. Check availability in your ZIP code to see our real-time openings.
+              We&apos;re local and ready to help. Check availability in your ZIP code to see our real-time openings.
             </p>
 
             <ul className="mt-6 grid grid-cols-2 gap-2">

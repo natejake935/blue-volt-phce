@@ -123,7 +123,7 @@ export default function HeroSection() {
                   <Zap className="w-7 h-7 text-brand-blue" />
                 </div>
                 <h3 className="font-bold text-brand-navy text-xl">Check Same-Day Availability</h3>
-                <p className="text-sm text-gray-500 mt-2">We'll show real-time openings in your area.</p>
+                <p className="text-sm text-gray-500 mt-2">We&apos;ll show real-time openings in your area.</p>
                 <div className="inline-flex items-center gap-1 bg-blue-50 text-brand-blue text-xs font-semibold px-3 py-1.5 rounded-full mt-3">
                   Step 1 of 3
                 </div>

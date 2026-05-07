@@ -26,7 +26,7 @@ export default function ConfirmationStep({ name, window, zip, neighborhood }: Co
         </div>
         <h2 className="text-3xl font-black text-brand-navy">Request Received!</h2>
         <p className="text-gray-500 mt-1">
-          Thanks, <span className="font-bold text-brand-navy">{firstName}</span>. We're on it.
+          Thanks, <span className="font-bold text-brand-navy">{firstName}</span>. We&apos;re on it.
         </p>
 
         {/* Selected window */}
@@ -83,7 +83,7 @@ export default function ConfirmationStep({ name, window, zip, neighborhood }: Co
           {/* Right: info */}
           <div className="p-6">
             <h3 className="font-bold text-xl text-white mb-2">
-              We'll call to confirm your appointment.
+              We&apos;ll call to confirm your appointment.
             </h3>
             <p className="text-blue-200 text-sm leading-relaxed">
               Our dispatcher will call you shortly at{" "}
@@ -96,7 +96,7 @@ export default function ConfirmationStep({ name, window, zip, neighborhood }: Co
                 ⚡ Need immediate help?
               </div>
               <p className="text-blue-200 text-xs mb-3">
-                Call us now and we'll get someone to you faster.
+                Call us now and we&apos;ll get someone to you faster.
               </p>
               <a
                 href="tel:6195550198"

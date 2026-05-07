@@ -58,7 +58,7 @@ export default function InfoStep({ onBack, onNext }: InfoStepProps) {
     <div>
       <div className="mb-6">
         <h2 className="text-2xl font-black text-brand-navy">Enter your details</h2>
-        <p className="text-gray-500 text-sm mt-1">We'll use this to confirm your appointment.</p>
+        <p className="text-gray-500 text-sm mt-1">We&apos;ll use this to confirm your appointment.</p>
       </div>
 
       <form onSubmit={handleSubmit} noValidate className="space-y-4">
