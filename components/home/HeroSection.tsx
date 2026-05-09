@@ -112,6 +112,14 @@ export default function HeroSection() {
                 </div>
                 <div className="text-xs text-blue-200">From 500+ San Diego Customers</div>
               </div>
+              <Image
+                src="/bbb-badge.png"
+                alt="BBB A+ Accredited Business"
+                width={140}
+                height={80}
+                className="object-contain"
+                style={{ filter: "brightness(0) invert(1) sepia(1) saturate(2) hue-rotate(190deg) brightness(1.1)" }}
+              />
             </div>
           </div>
 
