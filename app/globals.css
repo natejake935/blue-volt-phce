@@ -54,6 +54,18 @@
   @apply text-brand-green font-bold;
 }
 
+/* Hero background position — top-anchored on mobile, centered on desktop */
+.hero-bg {
+  background-position: center top;
+  background-size: 150%;
+}
+@media (min-width: 1024px) {
+  .hero-bg {
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
 /* Smooth step transitions */
 .step-enter {
   opacity: 0;

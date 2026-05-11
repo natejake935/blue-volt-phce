@@ -102,7 +102,7 @@ export default function Footer() {
 
         <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-blue-300">
-            © 2024 Blue Bolt Electrical. All rights reserved.
+            © 2024 Blue Volt Electrical. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <a href="#" className="text-xs text-blue-300 hover:text-white transition-colors">Privacy Policy</a>

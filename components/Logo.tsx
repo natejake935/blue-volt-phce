@@ -15,7 +15,7 @@ export default function Logo({ light = false }: LogoProps) {
       </div>
       <div className="leading-tight">
         <div className={`font-black text-base tracking-tight ${light ? "text-white" : "text-brand-navy"}`}>
-          BLUE BOLT
+          BLUE VOLT
         </div>
         <div className={`font-semibold text-xs tracking-widest uppercase ${light ? "text-blue-300" : "text-brand-blue"}`}>
           Plumbing, Heating, Cooling & Electrical

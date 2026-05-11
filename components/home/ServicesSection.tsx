@@ -54,7 +54,7 @@ const services: ServiceInfo[] = [
     icon: AlertTriangle,
     label: "Emergency Service",
     photo: `${BASE}/photo-1621905251189-08b45d6a269e?w=600&h=300&fit=crop&auto=format&q=80`,
-    description: "Electrical emergencies don't wait for business hours. Blue Bolt is available 24/7 for urgent issues including burning smells, sparking outlets, and total power loss.",
+    description: "Electrical emergencies don't wait for business hours. Blue Volt is available 24/7 for urgent issues including burning smells, sparking outlets, and total power loss.",
     bullets: ["24/7 emergency response", "Burning smell & spark diagnosis", "Emergency panel shutoff", "Typical 2-hour response time"],
   },
   {

@@ -10,7 +10,7 @@ export default function HowItWorks() {
   return (
     <section className="bg-brand-gray border-b border-gray-200" id="how-it-works">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-0">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
 
           {/* Label */}
           <span className="text-sm font-bold text-gray-400 uppercase tracking-widest flex-shrink-0">
@@ -18,10 +18,10 @@ export default function HowItWorks() {
           </span>
 
           {/* Steps */}
-          <div className="flex items-center gap-4 sm:gap-8 flex-wrap justify-center">
+          <div className="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 w-full sm:w-auto">
             {steps.map((step, i) => (
               <div key={step.number} className="flex items-center gap-5">
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-5 sm:gap-3 flex-1">
                   <div className="relative flex-shrink-0">
                     <div className="w-11 h-11 bg-white rounded-xl shadow-sm border border-blue-100 flex items-center justify-center">
                       <step.icon className="w-5 h-5 text-brand-blue" />

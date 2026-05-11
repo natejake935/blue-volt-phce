@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
+import { getNeighborhood } from "../../lib/zipNeighborhoods";
 import {
   AlertTriangle,
   Calendar,
@@ -109,20 +110,7 @@ function buildWindowLabel(date: Date, now: Date, windowLabel: string): string {
   return `${prefix}, ${windowLabel}`;
 }
 
-// ZIP → neighborhood name — Backend hook: replace with ZIP-to-zone API lookup
-const ZIP_NEIGHBORHOODS: Record<string, string> = {
-  "92103": "Hillcrest / North Park",
-  "92130": "Carmel Valley",
-  "92037": "La Jolla",
-  "92131": "Scripps Ranch",
-  "92009": "Carlsbad",
-  "92064": "Poway",
-  "92139": "Skyline / Encanto",
-  "91910": "Chula Vista",
-  "92113": "Barrio Logan",
-  "92110": "Mission Hills / Linda Vista",
-};
-const neighborhood = (zip: string) => ZIP_NEIGHBORHOODS[zip] ?? "San Diego Area";
+const neighborhood = (zip: string) => getNeighborhood(zip);
 
 // Status → static Tailwind classes (avoids purge issues with dynamic strings)
 const STATUS_LABEL_CLASS: Record<WindowStatus, string> = {
@@ -146,7 +134,7 @@ export default function WindowStep({ zip, onBack, onNext }: WindowStepProps) {
   const now = nowRef.current;
 
   // Generate 14-day date options starting from today
-  const dateOptions: Date[] = Array.from({ length: 14 }, (_, i) => addDays(now, i));
+  const dateOptions: Date[] = Array.from({ length: 5 }, (_, i) => addDays(now, i));
 
   // ── Auto-select initial date ───────────────────────────────────────────────
   // If it's past 6 PM or today has zero bookable slots, jump straight to tomorrow

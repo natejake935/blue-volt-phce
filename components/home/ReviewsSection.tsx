@@ -10,7 +10,7 @@ const reviews = [
     rating: 5,
     date: "2 weeks ago",
     photo: `${BASE}/photo-1522529599102-193c0d76b5b6?w=80&h=80&fit=crop&crop=face&auto=format`,
-    text: "Had a breaker tripping constantly and Blue Bolt was at my door same day. The tech explained everything clearly and fixed the issue in under an hour. Pricing was fair and upfront — no surprises on the invoice.",
+    text: "Had a breaker tripping constantly and Blue Volt was at my door same day. The tech explained everything clearly and fixed the issue in under an hour. Pricing was fair and upfront — no surprises on the invoice.",
   },
   {
     name: "Sandra R.",
@@ -26,7 +26,7 @@ const reviews = [
     rating: 5,
     date: "3 weeks ago",
     photo: `${BASE}/photo-1663579167845-c73285e3805b?w=80&h=80&fit=crop&crop=faces&auto=format`,
-    text: "We had a partial power outage on a Saturday night. Blue Bolt answered immediately and sent someone within 2 hours. Diagnosed a bad main breaker and had it replaced by midnight. Lifesavers.",
+    text: "We had a partial power outage on a Saturday night. Blue Volt answered immediately and sent someone within 2 hours. Diagnosed a bad main breaker and had it replaced by midnight. Lifesavers.",
   },
   {
     name: "Priya K.",
@@ -42,7 +42,7 @@ const reviews = [
     rating: 5,
     date: "5 days ago",
     photo: `${BASE}/photo-1651684215020-f7a5b6610f23?w=80&h=80&fit=crop&crop=face&auto=format`,
-    text: "Panel upgrade for a home addition. Blue Bolt handled the permit, inspection, and install seamlessly. No headaches, great communication throughout. Will use again for phase two of the project.",
+    text: "Panel upgrade for a home addition. Blue Volt handled the permit, inspection, and install seamlessly. No headaches, great communication throughout. Will use again for phase two of the project.",
   },
   {
     name: "Lisa M.",

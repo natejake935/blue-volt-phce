@@ -109,7 +109,7 @@ export default function ZipStep({ initialZip = "", onNext }: ZipStepProps) {
 
       {/* Trust sidebar */}
       <div className="md:col-span-2 bg-brand-gray rounded-2xl p-5 border border-gray-100">
-        <h3 className="font-bold text-brand-navy text-sm mb-4">Why book with Blue Bolt?</h3>
+        <h3 className="font-bold text-brand-navy text-sm mb-4">Why book with Blue Volt?</h3>
         <ul className="space-y-3">
           {trustItems.map((item) => (
             <li key={item} className="flex items-center gap-3 text-sm text-gray-700">

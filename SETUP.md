@@ -1,4 +1,4 @@
-# Blue Bolt Electrical — Setup
+# Blue Volt Electrical — Setup
 
 ## Requirements
 - Node.js 18+ (install from https://nodejs.org)

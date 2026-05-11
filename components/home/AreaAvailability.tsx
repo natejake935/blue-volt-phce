@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { MapPin, RefreshCw, Zap, Pencil, Check, X, AlertTriangle } from "lucide-react";
+import { getNeighborhood } from "../../lib/zipNeighborhoods";
 
 // ── Availability logic (mirrors WindowStep) ────────────────────────────────
 
@@ -63,18 +64,6 @@ function datePillLabel(date: Date, now: Date) {
   return date.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
 }
 
-const ZIP_NEIGHBORHOODS: Record<string, string> = {
-  "92103": "Hillcrest / North Park",
-  "92130": "Carmel Valley",
-  "92037": "La Jolla",
-  "92131": "Scripps Ranch",
-  "92009": "Carlsbad",
-  "92064": "Poway",
-  "92139": "Skyline / Encanto",
-  "91910": "Chula Vista",
-  "92113": "Barrio Logan",
-  "92110": "Mission Hills / Linda Vista",
-};
 
 // ── Component ──────────────────────────────────────────────────────────────
 
@@ -84,7 +73,7 @@ export default function AreaAvailability() {
   const nowRef = useRef<Date>(new Date());
   const now = nowRef.current;
 
-  const dateOptions = Array.from({ length: 7 }, (_, i) => addDays(now, i));
+  const dateOptions = Array.from({ length: 5 }, (_, i) => addDays(now, i));
   const todayExhausted = now.getHours() >= 18 || bookableCount(dateOptions[0], now) === 0;
 
   const [selectedDate, setSelectedDate] = useState<Date>(todayExhausted ? dateOptions[1] : dateOptions[0]);
@@ -154,7 +143,7 @@ export default function AreaAvailability() {
           ) : (
             <div className="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-full px-4 py-2 text-sm text-brand-navy font-medium">
               <MapPin className="w-4 h-4 text-brand-blue" />
-              {zip} ({ZIP_NEIGHBORHOODS[zip] ?? "San Diego Area"})
+              {zip} ({getNeighborhood(zip)})
               <button
                 onClick={() => { setZipInput(zip); setEditing(true); }}
                 className="ml-1 w-6 h-6 flex items-center justify-center rounded-full hover:bg-gray-200 text-gray-400 hover:text-brand-blue transition-colors"

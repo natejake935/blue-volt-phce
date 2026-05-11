@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Blue Bolt Electrical | Same-Day Electrician in San Diego",
+  title: "Blue Volt Electrical | Same-Day Electrician in San Diego",
   description:
     "Get a licensed electrician at your door today. Same-day service across San Diego County. Book a 2-hour arrival window in under 60 seconds.",
   keywords:

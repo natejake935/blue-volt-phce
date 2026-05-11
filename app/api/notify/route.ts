@@ -18,14 +18,14 @@ export async function POST(request: NextRequest) {
     const resend = new Resend(process.env.RESEND_API_KEY);
     notifications.push(
       resend.emails.send({
-        from: "Blue Bolt Bookings <onboarding@resend.dev>",
+        from: "Blue Volt Bookings <onboarding@resend.dev>",
         to: NOTIFY_EMAIL,
         subject: `New Booking – ${name} | ${window}`,
         html: `
           <div style="font-family:sans-serif;max-width:520px;margin:0 auto">
             <div style="background:#061A33;padding:20px 24px;border-radius:8px 8px 0 0">
               <h1 style="color:#FFD21E;margin:0;font-size:20px">&#9889; New Booking Request</h1>
-              <p style="color:#93c5fd;margin:4px 0 0;font-size:13px">Blue Bolt Electrical — San Diego</p>
+              <p style="color:#93c5fd;margin:4px 0 0;font-size:13px">Blue Volt Electrical — San Diego</p>
             </div>
             <div style="background:#f8fafc;border:1px solid #e2e8f0;border-top:none;padding:24px;border-radius:0 0 8px 8px">
               <table style="width:100%;border-collapse:collapse;font-size:14px">
@@ -51,7 +51,7 @@ export async function POST(request: NextRequest) {
   ) {
     const client = twilio(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
     const smsBody = [
-      `⚡ Blue Bolt Booking`,
+      `⚡ Blue Volt Booking`,
       `${name} | ${phone}`,
       `${addressFull}, ${zip}`,
       `${window}`,

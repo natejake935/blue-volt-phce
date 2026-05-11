@@ -30,15 +30,15 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-brand-navy">
-      {/* Background Image */}
-      <Image 
-        src="/hero-bg.png" 
-        alt="Electrician working at electrical panel" 
-        fill 
-        className="object-cover object-center absolute inset-0 z-0 opacity-60 mix-blend-luminosity" 
-        priority 
-      />
+    <section
+      className="relative overflow-hidden bg-brand-navy hero-bg"
+      style={{
+        backgroundImage: "url('/hero-bg.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundBlendMode: "luminosity",
+      }}
+    >
+      <div className="absolute inset-0 bg-brand-navy/40 z-0" />
       <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/80 via-brand-navy/50 to-brand-navy/20 z-0" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
@@ -77,7 +77,7 @@ export default function HeroSection() {
               >
                 <Zap className="w-5 h-5 fill-white" />
                 <div className="text-left">
-                  <div>SCHEDULE NOW</div>
+                  <div>SCHEDULE NOW & SAVE</div>
                   <div className="text-xs font-normal text-blue-200">See real-time openings in your area</div>
                 </div>
               </Link>

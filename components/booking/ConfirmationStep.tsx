@@ -43,7 +43,7 @@ export default function ConfirmationStep({ name, window, zip, neighborhood }: Co
         {/* Dispatcher note */}
         <div className="mt-5 bg-amber-50 border border-amber-200 rounded-xl p-4 text-left">
           <p className="text-sm text-amber-800 font-medium">
-            A Blue Bolt dispatcher will call you shortly to confirm your appointment and assign the closest available electrician.
+            A Blue Volt dispatcher will call you shortly to confirm your appointment and assign the closest available electrician.
           </p>
         </div>
 
@@ -75,7 +75,7 @@ export default function ConfirmationStep({ name, window, zip, neighborhood }: Co
               <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-3">
                 <User className="w-10 h-10 text-blue-300" />
               </div>
-              <div className="text-white font-semibold text-sm">Blue Bolt Dispatcher</div>
+              <div className="text-white font-semibold text-sm">Blue Volt Dispatcher</div>
               <div className="text-blue-300 text-xs">Available 24/7</div>
             </div>
           </div>

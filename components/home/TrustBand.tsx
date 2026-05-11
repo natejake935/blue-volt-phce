@@ -38,8 +38,8 @@ export default function TrustBand() {
         <div className="grid grid-cols-2 sm:grid-cols-5 gap-8">
           {badgesLeft.map((badge) => <Badge key={badge.label} {...badge} />)}
 
-          {/* BBB — center */}
-          <div className="flex flex-col items-center text-center gap-2">
+          {/* BBB — full width centered on mobile, normal col on desktop */}
+          <div className="col-span-2 sm:col-span-1 flex flex-col items-center text-center gap-2">
             <div className="w-36 h-16 flex items-center justify-center">
               <Image
                 src="/bbb-badge.png"

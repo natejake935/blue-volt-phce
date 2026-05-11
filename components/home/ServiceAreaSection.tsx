@@ -1,4 +1,7 @@
 import { CheckCircle, MapPin, Truck } from "lucide-react";
+import dynamic from "next/dynamic";
+
+const ServiceAreaMap = dynamic(() => import("./ServiceAreaMap"), { ssr: false });
 
 const cities = [
   "La Jolla", "Chula Vista", "El Cajon", "Carlsbad",
@@ -37,18 +40,9 @@ export default function ServiceAreaSection() {
             </ul>
           </div>
 
-          {/* Map — centered to show Mexico border → Fallbrook */}
+          {/* Map */}
           <div className="lg:col-span-1 rounded-2xl overflow-hidden shadow-lg border border-gray-200" style={{ height: 320 }}>
-            <iframe
-              src="https://maps.google.com/maps?ll=32.96,-117.14&t=&z=9&ie=UTF8&iwloc=&output=embed"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="San Diego County service area map"
-            />
+            <ServiceAreaMap />
           </div>
 
           {/* Floating card */}
