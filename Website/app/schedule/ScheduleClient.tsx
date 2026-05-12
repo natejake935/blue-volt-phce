@@ -81,8 +81,7 @@ export default function ScheduleClient() {
     setStep("review");
   };
 
-  const handleSubmit = async (e?: React.FormEvent | React.MouseEvent) => {
-    if (e) e.preventDefault();
+  const handleSubmit = async () => {
     if (!customerInfo) return;
     setIsSubmitting(true);
     try {
