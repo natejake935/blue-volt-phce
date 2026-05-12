@@ -81,7 +81,8 @@ export default function ScheduleClient() {
     setStep("review");
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (e?: React.FormEvent | React.MouseEvent) => {
+    if (e) e.preventDefault();
     if (!customerInfo) return;
     setIsSubmitting(true);
     try {
@@ -100,7 +101,7 @@ export default function ScheduleClient() {
         }),
       });
     } catch {
-      // Non-blocking: advance to confirmation regardless of notification errors
+      // Non-blocking — advance to confirmation even if notification fails
     } finally {
       setIsSubmitting(false);
       setStep("confirmation");

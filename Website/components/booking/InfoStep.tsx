@@ -61,7 +61,7 @@ export default function InfoStep({ onBack, onNext }: InfoStepProps) {
         <p className="text-gray-500 text-sm mt-1">We&apos;ll use this to confirm your appointment.</p>
       </div>
 
-      <form onSubmit={handleSubmit} noValidate className="space-y-4">
+      <form onSubmit={handleSubmit} method="post" action="#" noValidate className="space-y-4">
         <div className="grid sm:grid-cols-3 gap-4">
           {/* Full Name */}
           <div>
