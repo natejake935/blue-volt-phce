@@ -85,7 +85,7 @@ export default function ScheduleClient() {
     if (!customerInfo) return;
     setIsSubmitting(true);
     try {
-      await fetch("https://bluevolt-backend.vercel.app/api/booking", {
+      await fetch("https://blue-volt-backend-api.vercel.app/api/booking", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
