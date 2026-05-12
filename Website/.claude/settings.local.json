@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($env:PATH = \"C:\\\\Program Files\\\\nodejs;$env:PATH\"; cd \"c:\\\\Users\\\\natej\\\\OneDrive\\\\Desktop\\\\Blue Bolt Electric\"; npm install)"
+    ]
+  }
+}

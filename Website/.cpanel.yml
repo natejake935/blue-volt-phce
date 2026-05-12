@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bluevoltphce/public_html/
+    - /bin/rsync -av --delete ./out/ $DEPLOYPATH
