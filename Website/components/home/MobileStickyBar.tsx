@@ -15,7 +15,7 @@ export default function MobileStickyBar() {
           Schedule Now
         </Link>
         <a
-          href="tel:6195550198"
+          href="tel:8582255957"
           className="flex flex-col items-center justify-center gap-1 py-3 bg-brand-navy text-white font-bold text-sm"
         >
           <Phone className="w-5 h-5" />
