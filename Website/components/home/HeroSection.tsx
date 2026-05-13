@@ -83,13 +83,13 @@ export default function HeroSection() {
               </Link>
 
               <a
-                href="tel:6195550198"
+                href="tel:8582255957"
                 className="inline-flex items-center gap-3 bg-white/10 border-2 border-white/30 text-white font-bold px-7 py-4 rounded-xl hover:bg-white/20 transition-all text-base"
               >
                 <Phone className="w-5 h-5" />
                 <div className="text-left">
                   <div>CALL NOW</div>
-                  <div className="text-xs font-normal text-blue-200">(619) 555-0198</div>
+                  <div className="text-xs font-normal text-blue-200">(858) 225-5957</div>
                 </div>
               </a>
             </div>

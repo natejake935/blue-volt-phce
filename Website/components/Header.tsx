@@ -38,12 +38,12 @@ export default function Header() {
           {/* Desktop right side */}
           <div className="hidden lg:flex items-center gap-4">
             <a
-              href="tel:6195550198"
+              href="tel:8582255957"
               className="flex items-center gap-2 text-brand-navy font-semibold text-sm hover:text-brand-blue transition-colors"
             >
               <Phone className="w-4 h-4" />
               <div>
-                <div>(619) 555-0198</div>
+                <div>(858) 225-5957</div>
                 <div className="text-xs font-normal text-gray-500">Call Now 24/7</div>
               </div>
             </a>
@@ -81,11 +81,11 @@ export default function Header() {
           ))}
           <div className="pt-3 border-t border-gray-100 space-y-3">
             <a
-              href="tel:6195550198"
+              href="tel:8582255957"
               className="flex items-center gap-2 text-brand-navy font-semibold text-sm"
             >
               <Phone className="w-4 h-4" />
-              (619) 555-0198
+              (858) 225-5957
             </a>
             <Link
               href="/schedule"

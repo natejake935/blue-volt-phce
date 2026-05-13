@@ -114,12 +114,12 @@ export default function ScheduleClient() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
           <Logo />
           <a
-            href="tel:6195550198"
+            href="tel:8582255957"
             className="flex items-center gap-2 text-brand-navy text-sm font-semibold hover:text-brand-blue transition-colors"
           >
             <Phone className="w-4 h-4" />
             <span className="hidden sm:inline">Need help? Call </span>
-            <span className="text-brand-blue">(619) 555-0198</span>
+            <span className="text-brand-blue">(858) 225-5957</span>
           </a>
         </div>
       </header>
@@ -189,7 +189,7 @@ export default function ScheduleClient() {
               { label: "Licensed & Insured", sub: "CA Lic. #1051234" },
               { label: "Background Checked", sub: "Trusted Professionals" },
               { label: "500+ 5-Star Reviews", sub: "From San Diego Customers", stars: true },
-              { label: "24/7 Emergency Service", sub: "Call (619) 555-0198" },
+              { label: "24/7 Emergency Service", sub: "Call (858) 225-5957" },
             ].map((item) => (
               <div key={item.label} className="flex flex-col items-center text-center gap-1">
                 {item.stars && (

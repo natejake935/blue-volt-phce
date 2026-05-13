@@ -87,7 +87,7 @@ export default function ConfirmationStep({ name, window, zip, neighborhood }: Co
             </h3>
             <p className="text-blue-200 text-sm leading-relaxed">
               Our dispatcher will call you shortly at{" "}
-              <span className="text-white font-semibold">(619) 555-0198</span> to confirm your appointment and answer any questions you may have.
+              <span className="text-white font-semibold">(858) 225-5957</span> to confirm your appointment and answer any questions you may have.
             </p>
 
             {/* Emergency card */}
@@ -99,11 +99,11 @@ export default function ConfirmationStep({ name, window, zip, neighborhood }: Co
                 Call us now and we&apos;ll get someone to you faster.
               </p>
               <a
-                href="tel:6195550198"
+                href="tel:8582255957"
                 className="flex items-center justify-center gap-2 border-2 border-white/30 text-white font-bold py-2.5 rounded-lg hover:bg-white/10 transition-colors text-sm w-full"
               >
                 <Phone className="w-4 h-4" />
-                CALL (619) 555-0198
+                CALL (858) 225-5957
               </a>
             </div>
           </div>

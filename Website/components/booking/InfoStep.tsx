@@ -96,7 +96,7 @@ export default function InfoStep({ onBack, onNext }: InfoStepProps) {
                 autoComplete="tel"
                 value={form.phone}
                 onChange={(e) => set("phone", e.target.value)}
-                placeholder="(619) 555-1234"
+                placeholder="(858) 225-5957"
                 className={inputClass(!!errors.phone)}
               />
             </div>
