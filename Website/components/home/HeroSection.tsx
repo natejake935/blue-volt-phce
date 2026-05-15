@@ -48,7 +48,7 @@ export default function HeroSection() {
             {/* Urgency badge */}
             <div className="inline-flex items-center gap-2 bg-brand-yellow text-brand-navy text-xs font-bold px-4 py-2 rounded-full mb-6 shadow-lg">
               <Zap className="w-3.5 h-3.5 fill-brand-navy" />
-              SAME-DAY ELECTRICIAN AVAILABLE
+              SAME-DAY ELECTRICIAN AVAILABLE — Call Now & Save
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-[3.5rem] font-black text-white leading-tight">
